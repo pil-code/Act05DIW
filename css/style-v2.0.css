@@ -9,9 +9,8 @@
 }
 
 @font-face {
-    font-family: "milove";
+    font-family: "milove" "miloveregular", "Montserrat";
     src: url('fuentes/milove.otf');
-    font-family: 'miloveregular';
     src: url('milove-webfont.woff2') format('woff2'),
          url('milove-webfont.woff') format('woff');
     }
