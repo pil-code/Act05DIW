@@ -1,0 +1,657 @@
+
+/*******************Estilos en HTML*******************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url();
+}
+
+@font-face {
+    font-family: "milove";
+    src: url('fuentes/milove.otf');
+    }
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url('fontawesome-webfont.woff');
+}
+
+    
+*{
+    line-height: 1.5;
+    margin:0cm;
+}
+
+h1{
+    font-family: milove;
+    color:#ffffff;
+    font-size:350%;
+    text-align: center;
+}
+
+h2{
+    font-family: Cambria;
+    color:#5BB0A7;
+    size: 48px;
+    text-align: center;
+}
+
+
+h3{
+    font-family: Montserrat;
+    color:#5BB0A7;
+    font-size:20 px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blanco, div.col30 h4{
+    color:#ffffff;
+}
+
+
+h4{
+    font-family: Montserrat;
+    font-weight: 800;
+    color:#595959;
+    font-size:18 px;
+}
+
+p, li, td, .texto {
+    font-family: Montserrat;
+    color:#595959;
+}
+
+h2 + p{
+    font-family: Montserrat;
+    color:#595959;
+    text-align: center;
+}
+
+big{
+    font-weight: 500;
+}
+
+
+#mi-foto {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 90%;
+    display:block;
+    margin: auto;
+}
+
+
+
+/*******************Estilo de Nav*******************/  
+
+/*Formato de la barra de navegación */
+nav.barra {
+    border: 1px;
+    background-color: #F2EDEA;
+    position:sticky;
+    top: 10%;
+    left: 100%; /*Ubicación barra*/
+    z-index: 60; 
+    float:left;  
+    
+}
+
+
+/*elimina el formato en las listas no ordenadas*/
+.vacio {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    width: 100%;
+}
+
+
+/*Formato de los links (botones) de la barra de navegación por defecto*/
+nav.barra a, a.boton-ini {
+    font-family: Montserrat;
+    font-weight: bold;
+    display: block;
+    color: #AA8A7B;
+    border: 1px solid #AA8A7B;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100px;
+    background-color: #F2EDEA;
+}
+
+
+/*Cambia el formato de los botones de la barra de navegación
+cuando se pasa el cursor sobre ellos*/
+nav.barra a:hover {
+    cursor: pointer;
+    background-color: #5BB0A7;
+    color: #ffffff;
+}
+
+
+.nav-sel {   /*En la v1.0 no tiene funcionalidad*/
+    background-color: #5BB0A7;
+    color: #ffffff;
+}
+
+
+
+
+/*******************Fondos*******************/
+
+.bg-blanco{
+    background-color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.bg-gris{
+    background-color: #E6E7E9;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+.contenedor{
+    width: 60%;
+    min-width: 360px;
+    margin: auto;
+}
+
+
+.fila{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+
+/*3 columnas 30-30-30 de presentación*/
+div.columna3{
+   width: 250px;
+   padding: 2%;
+}
+
+
+
+/* FILA 30%-70%  de experiencia y profesion */
+.fila30-70{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /*    border: blue solid 1px;    BORRAR*/ 
+    width:100%;
+    flex-grow: 50;
+    margin:20px 0;
+}
+
+
+ /*2 columnas 30-70*/
+ div.col30{
+    background-color: rgb(91,176,167, 0.4);
+    width: 20%;
+    min-width:140px;
+    display:flex;
+    padding: 1%;
+    vertical-align: top;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-grow:2;
+    margin-right: 10px;  
+    /*    border: pink solid 1px;     BORRAR */
+ }
+
+ div.col30 p{
+     display:block;
+     width: 100%; 
+    /*   border: green solid 1px;     BORRAR */
+    }
+
+
+ div.col70{
+    width: 70%;
+    display:inline-block;
+    padding: 1%;
+    vertical-align: top;
+ }
+
+div.columna{
+    width: 25%;
+    display:inline-block;
+    padding: 2%;
+    margin-top: 80px;
+}
+
+
+
+/*******************Estilos de Header*******************/
+#header-contenedor{
+    display:flex;
+    justify-content: space-around; /*conseguimos centrar el txt*/
+    position: relative;
+    background: rgba(91, 164, 176,0.75); /*no hace transparente el header-caja*/
+    min-height: 100vh; /*ocupa toda la pantalla */
+    
+}
+
+#header-bg{
+    background-repeat: no-repeat;
+}
+
+.header-caja{
+    align-self: center;
+    position: absolute;
+    /*top:35%;
+    left: 35%;*/
+}
+
+/*Boton "Hola"*/
+a.boton-ini{
+    position: absolute;
+    bottom:0;
+    right: 0; 
+    background-color: #ffffff;
+    width: 100px;
+   
+}
+
+a.boton-ini:hover {
+    cursor: pointer;
+    background-color: #AA8A7B;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+
+/*******************Estilos de Perfil*******************/
+/*Flex en el contenedor de presentación*/
+#presentacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+/*    background-color: aqua; BORRAR*/
+}
+
+/*Como se encogen y se expanden
+los contenedores que son hijos directos de #contenedor*/
+#presentacion div{
+    flex-shrink: 2;
+    flex-grow: 50;
+}
+
+/* La foto se debe encoger */
+#mi-foto{
+    min-width: 200px;
+    flex-shrink: 2;
+}
+
+/*Debe ampliarse*/
+#aboutme{
+    flex-grow: 50;
+}
+
+/*Flex en contenedor de los detalles*/
+#perfil #detalles{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+
+}
+
+/*Atributos de los div que están dentro del contenedor de detalles:
+Nombre, edad, etc*/
+#perfil #detalles div{
+    flex-wrap: nowrap;
+    display:inline-flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin: 6px;
+/*    border: solid 1px red;    BORRAR*/
+}
+
+#perfil #detalles p{
+    min-width: 100px;
+    }
+
+/*Este contenedor va a expandirse*/
+#perfil #detalles #intereses{
+    flex-grow: 2;
+}
+
+
+/*******************Estilos de Habilidades*******************/
+ /*Contenedor Habilidades */
+ ul.columna-habilidades{
+    display:flex; /*Primero creamos el contenedor flex*/
+    /*Definimos la direccion e indicamos si permitimos
+    que los elementos cambien de línea*/
+    flex-flow: row wrap; 
+    /*¿Cómo se distribuyen los elementos en el espacio disponible?*/
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+    list-style:none;
+    /*border: 1px solid pink; /*borrar*/
+}
+
+
+/*Elementos de Habilidades*/
+
+.columna-habilidades li{
+    min-width: 200px;
+    width: 25%;
+    display:inline-block;
+    margin: 12px;
+    order:5; 
+    /*border:1px solid blue; /*BORRAR*/
+}
+
+/*A las habilidades más relevante les cambio el orden*/
+#Java{  
+    order:1;
+}
+
+#CSS{  
+    order:2;
+}
+
+#Photoshop{  
+    order:3;
+}
+
+/*barrita de base que representa el 100% de la habilidad*/
+.porcentaje-total{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #ffffff;
+    display: block;
+    margin-bottom:15px;
+}
+
+/*barrita que representa el % adquirido de la habilidad*/
+.porcentaje{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #5BB0A7;
+    height: 100%;
+    margin-bottom:15px;
+}
+
+span {
+    display:inline-block;
+}
+
+/*******************Estilos de Proyectos*******************/
+/*Flex para el contenedor de proyectos*/
+#contenedor-proyectos{
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    /*border: 1px solid orange; BORRAR */
+}
+
+/*El contenedor de cada proyecto: Flex*/
+.project{
+    width: 300px; /*Para que entren 3 proyectos en cada fila*/
+    min-width: 100px; /*Cuando se alcance este ancho, tendrá que saltar a otra fila*/
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-grow: 2;
+    margin:1%; 
+    /*border: 1px solid yellow; BORRAR*/
+}
+
+
+/*Fuente pequeña utilizando una clase*/
+.small{
+    font-size:12px;
+}
+
+/*Fuente cursiva una clase*/
+.cursiva{
+    font-style:italic;
+}
+
+/*Fuente alineada a la derecha una clase*/
+.derecha{
+    text-align:right;
+}
+
+.project img{
+    width: 100%;
+    display:block;
+}
+
+
+
+/*******************Estilos de Footer*******************/
+footer{
+    background-color: #AA8A7B;
+    text-align: center;
+}
+
+footer p{
+    color: #ffffff;
+    font-family:Cambria;
+    size: 12px;
+}
+
+
+#contacto.bg-marron{
+    padding-top: 3%;
+    padding-bottom: 12x;
+}
+
+/********** REFERENCIAS (Nueva seccion para practicar z-index ***********/
+
+/*Contenedor que incluyen todas las referencias*/
+#tarjetas{
+    display: flex;
+    flex-direction:column;
+    /*border: 4px solid orchid; BORRAR*/
+
+}
+
+/*fila con cada referencia*/
+.tarjeta-ref{
+    display: flex;
+    flex-flow:row no-wrap;
+    margin-top: 10px;
+    /*border: 2px solid blue; BORRAR*/ 
+}
+
+/*Alteramos el orden para alternar las filas de referencias
+y la posicionamos para el z-index*/
+.tarjeta-ref#ref2{
+    flex-flow: row-reverse nowrap;
+    /*border: 3px solid greenyellow; BORRAR*/
+    position: relative;
+    top: -60px;
+    text-align: right;
+}
+
+/*Posicionamos la ultima referencia para el z-index*/
+.tarjeta-ref#ref3{
+    flex-flow:row;
+    /*border: 3px solid darkred; BORRAR*/
+    position:relative;
+    top: -100px;
+}
+
+/* caract por defecto de las imagenes*/
+.tarjeta-ref img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    flex-shrink: 10;
+}
+
+/*Apariencia de las cajitas de texto*/
+.txt-ref{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    padding: 5%;
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+
+}
+
+#ref1 .txt-ref{
+    background-color:rgb(242, 237, 234);
+    /*padding-top: 0; /*le quito el padding superior para que sea compatible con el solapamiento de capas*/
+    justify-content: start;
+}
+#ref2 .txt-ref{
+    background-color:#ffffff;
+    padding: 5%; 
+    justify-content: center;
+}
+#ref3 .txt-ref{
+    background-color:rgb(242, 237, 234);
+    justify-content: flex-end;
+}
+
+
+
+/*z-index para las img de las referencias*/
+#ref1 img{
+    z-index: 3;
+}
+
+#ref2 img{
+    z-index: 1;
+    width: 60%;    /*modificamos el tamaño de esta img*/ 
+    flex-shrink: 10;
+}
+
+#ref3 img{
+    z-index: 2;
+}
+
+/********** FORM CONTACTO ***********/
+
+/*Formato y disposición de los input de nombre e email*/
+input#nombre, input#email{
+    font-family: Montserrat;
+    color:#595959;
+    width: 40%;
+    min-width: 240px;
+    flex-grow: 2;
+    flex-shrink: 2;
+    row-gap:30px;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    background-color: rgba(91, 176, 167, 0.4);
+    border: none;
+}
+
+/*El formato y disposición del campo mensaje es diferente*/
+#mensaje {
+    font-family: Montserrat;
+    color:#595959;
+    width: 100%;
+    height: 150px;
+    align-content: flex-start;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    background-color: rgba(91, 176, 167, 0.4);
+    border: none;
+    resize:none;
+}    
+
+/*Flex en el contenedor del formulario*/
+#form-contacto form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+/*Contenedor de provacidad: Flex*/
+#form-contacto #cont-privacidad{
+    width: 48%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    margin: 8px 10px;
+    box-sizing: border-box;
+    
+}
+/*checkbox de privacidad*/
+#cb-privacidad{
+    background-color: rgba(91, 176, 167, 0.4);
+    border: none;
+} 
+
+/*etiqueta de privacidad*/
+#cont-privacidad label{
+    margin-left: 20px;
+}
+
+/*Quiero que estén alineados en los extremos*/
+#flex-space-bt{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+    
+/*Boton de enviar*/
+input[type=submit] {
+    font-family: Montserrat;
+    font-weight: bold;
+    display: block;
+    color: #AA8A7B;
+    border: 1px solid #AA8A7B;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    background-color: #F2EDEA;
+    margin-right: 12px;
+    height: 30px;
+    align-self: center;
+}
+
+
+/*Cuando se reduce el tamaño del navegador
+oculto el menú*/
+@media (max-width: 730px) {
+
+    .barra, a.boton-ini {
+      display: none;
+    }
+
+/*Cuando cambia el tamaño del navegador,
+los z-index de las referencias se invierten*/
+    #ref1 .txt-ref{
+        z-index: 4; /*para que aparezca por encima de la img*/
+    }
+    #ref2 .txt-ref{
+        z-index: 5; /*para que aparezca por encima de la img*/
+    }
+    #ref3 .txt-ref{
+        z-index: 6; /*para que aparezca por encima de la img*/
+    }
+}

@@ -1,0 +1,425 @@
+
+/*******************Estilos en HTML*******************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url();
+}
+
+@font-face {
+    font-family: "milove";
+    src: url('fuentes/milove.otf');
+    }
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url('fontawesome-webfont.woff');
+}
+
+    
+*{
+    line-height: 1.5;
+    margin:0cm;
+}
+
+h1{
+    font-family: milove;
+    color:#ffffff;
+    font-size:350%;
+    text-align: center;
+}
+
+h2{
+    font-family: Cambria;
+    color:#5BB0A7;
+    size: 48px;
+    text-align: center;
+}
+
+
+
+
+h3{
+    font-family: Montserrat;
+    color:#5BB0A7;
+    font-size:20 px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blanco{
+    color:#ffffff;
+}
+
+
+h4{
+    font-family: Montserrat;
+    font-weight: 800;
+    color:#595959;
+    font-size:18 px;
+}
+
+p, li, td, .texto {
+    font-family: Montserrat;
+    color:#595959;
+}
+
+h2 + p{
+    font-family: Montserrat;
+    color:#595959;
+    text-align: center;
+}
+
+big{
+    font-weight: 500;
+}
+
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 90%;
+    display:block;
+    margin: auto;
+}
+
+
+
+/*******************Estilo de Nav*******************/  
+
+/*Formato de la barra de navegación */
+nav.barra {
+    border: 1px;
+    background-color: #F2EDEA;
+    position:sticky;
+    top: 10%;
+    left: 85%; /*Ubicación barra*/
+    z-index: 60; 
+    float:left;  
+    
+}
+
+
+
+/*Posiciona las lista del menú de navegación*/
+
+ul.vacio {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    width: 100%;
+}
+
+.bg-blanco{
+   /* z-index: 40; NO ES NECESARIO PORQUE LA BARRA DE NAVEGACION YA TIENE Z-INDEZ*/
+}
+
+
+/*Formato de los links (botones) de la barra de navegación por defecto*/
+nav.barra a, a.boton-ini {
+    font-family: Montserrat;
+    font-weight: bold;
+    display: block;
+    color: #AA8A7B;
+    border: 1px solid #AA8A7B;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100px;
+    background-color: #F2EDEA;
+}
+
+
+
+
+/*Cambia el formato de los botones de la barra de navegación
+cuando se pasa el cursor sobre ellos*/
+nav.barra a:hover {
+    cursor: pointer;
+    background-color: #5BB0A7;
+    color: #ffffff;
+}
+
+
+.nav-sel {   /*En la v1.0 no tiene funcionalidad*/
+    background-color: #5BB0A7;
+    color: #ffffff;
+}
+
+
+
+
+/*****Fondos*****/
+
+.bg-blanco{
+    background-color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.bg-gris{
+    background-color: #E6E7E9;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+.contenedor{
+    width: 50%;
+    margin: auto;
+}
+
+
+.fila{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+
+/*3 columnas 30-30-30*/
+div.columna3{
+   width: 30%;
+   display:inline-block;
+   padding: 2%;
+   vertical-align: top;
+}
+
+/*2 columnas 50-50*/
+div.columna2{
+    width: 45%;
+    display:inline-block;
+    padding: 2%;
+    vertical-align: top;
+ }
+
+ /*2 columnas 30-70*/
+ div.col30{
+    width: 28%;
+    display:inline-block;
+    padding: 1%;
+    vertical-align: top;
+ }
+ div.col70{
+    width: 67%;
+    display:inline-block;
+    padding: 1%;
+    vertical-align: top;
+ }
+
+div.columna{
+    width: 25%;
+    display:inline-block;
+    padding: 2%;
+    margin-top: 80px;
+}
+
+
+
+/*******************Estilos de Header*******************/
+#header-contenedor{
+    position: relative;
+    background: rgba(91, 164, 176,0.75); /*no hace transparente el header-caja*/
+    /*background-color: #5BB0A7;
+    opacity: 0.75;*/
+    min-height: 100vh; /*ocupa toda la pantalla */
+    
+}
+
+#header-bg{
+    background-repeat: no-repeat;
+
+    
+}
+
+.header-caja{
+    position: absolute;
+    top:35%;
+    left: 35%;
+
+}
+
+/*Boton "Hola"*/
+a.boton-ini{
+    position: absolute;
+    bottom:0;
+    left: 85%; 
+    background-color: #ffffff;
+    width: 100px;
+   
+}
+
+
+a.boton-ini:hover {
+    cursor: pointer;
+    background-color: #AA8A7B;
+    color: #ffffff;
+    border: #ffffff 1px solid;
+}
+
+
+/*******************Estilos de Perfil*******************/
+
+
+
+
+/*******************Estilos de Habilidades*******************/
+
+.porcentaje-total{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #ffffff;
+    display: block;
+    margin-bottom:15px;
+}
+
+.porcentaje{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #5BB0A7;
+    height: 100%;
+    margin-bottom:15px;
+}
+
+span {
+    display:inline-block;
+}
+
+/*******************Estilos de Proyectos*******************/
+#contenedor-proyectos{
+    margin-left: auto;
+    display: flex;
+    align-items: normal;
+    vertical-align:top;
+}
+
+
+.project{
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    display: block;
+    margin:15px; 
+}
+
+/*Fuente pequeña utilizando una clase*/
+.small{
+    font-size:12px;
+}
+
+/*Fuente cursiva una clase*/
+.cursiva{
+    font-style:italic;
+}
+
+/*Fuente alineada a la derecha una clase*/
+.derecha{
+    text-align:right;
+}
+
+
+.project img{
+    margin-bottom: 15px;
+}
+
+/*******************Estilos de Footer*******************/
+footer{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+footer p{
+    color: #AA8A7B;
+    font-family:Cambria;
+    size: 12px;
+}
+
+
+
+/*=============v1.1*=============/
+
+/*******************Estilos de Contacto*******************/
+/*Sirve para ocultar los iconos de RRSS*/
+#inferior.bg-marron {
+    padding-bottom: 0;
+}
+
+/*Para utilizar z-index necesitamos un contenedor con posicionamiento*/
+#posicion{
+    position:relative;
+}
+
+/*Los iconos tienen que partir de una posición negativa
+para que estén ocultos por el parche inferior*/
+#contacto #superior{
+    position:relative;
+    bottom:-60px;
+    width: 100%;
+    height: 60px;
+    z-index: 1; /*Siempre tiene que mantenerse por debajo de los iconos*/
+    margin-left:20%;
+    margin-right:20%;
+}
+
+
+#contacto #inferior{
+    position:relative;
+    width: 100%;
+    height: 15px;
+    border-top: 4px solid rgba(255, 255, 255, 0.7);
+    background: rgba(170, 138, 123 ,0.75);
+    /*background-color: #AA8A7B;
+    opacity: 0.75;*/
+    filter: blur(0.2rem);
+    backdrop-filter: blur(1px); /*Efecto difuminado*/
+    z-index: 3; /*Tiene que ser mayor que los iconos para tapar la mitad inferior */
+}
+#posicion ul li {
+    list-style: none;
+    display:inline;
+    width: 100%;
+    margin:10px;
+    margin:auto;
+}
+
+/*Iconos*/
+#posicion ul li a{
+    position: relative;
+    top: 0;
+    left:5% ;
+    right: 5%;
+    height: 100px;
+    list-style: none;
+    color: #5BB0A7;
+    display: inline;
+    border: 1px solid #AA8A7B;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+    width: 100px;
+    background-color: #F2EDEA;
+    align-items: center;
+    font-size: 3em;
+    z-index: 2; /*Por encima de la capa superior y por debajo de la inferior*/
+}
+
+
+
+#posicion ul li a:hover{
+    position: relative;
+    top:-50px; /*el icono cambia de posicion*/
+    z-index: 30;
+}
+
+#contacto.bg-marron{
+    background-color: #AA8A7B;
+    padding-top: 3%;
+    padding-bottom: 12x;
+}
