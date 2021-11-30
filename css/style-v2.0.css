@@ -11,6 +11,9 @@
 @font-face {
     font-family: "milove";
     src: url('fuentes/milove.otf');
+    font-family: 'miloveregular';
+    src: url('milove-webfont.woff2') format('woff2'),
+         url('milove-webfont.woff') format('woff');
     }
 
 @font-face {
