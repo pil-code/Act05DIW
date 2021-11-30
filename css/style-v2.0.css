@@ -443,9 +443,12 @@ span {
 
 
 /*******************Estilos de Footer*******************/
-footer{
-    background-color: #AA8A7B;
-    text-align: center;
+/*******************Estilos de Footer*******************/
+
+footer *{
+    margin:0;
+    padding:0;
+    color: #ffffff;
 }
 
 footer p{
@@ -454,10 +457,85 @@ footer p{
     size: 12px;
 }
 
+/*contenedor del footer con grid*/
+footer .container{
+    background-color: #AA8A7B;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap:5%;
+    padding: 2%;
+}
 
-#contacto.bg-marron{
-    padding-top: 3%;
-    padding-bottom: 12x;
+/*contenedor  de los iconos*/
+footer .iconos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 3%;
+    grid-gap:1%;
+    
+}
+
+/*eliminamos los puntos de las viñetas*/
+.iconos li{
+    list-style: none;
+}
+
+.iconos li a{
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #F2EDEA;
+    text-decoration: none;
+}
+
+/*color de los iconos*/
+footer .iconos i{
+    color: #AA8A7B;
+    font-size: 1.3em;
+}
+
+/*enlaces*/
+.enlacesrapidos{
+    position: relative;
+}
+
+.enlacesrapidos li{
+    list-style: none;
+}
+
+.enlacesrapidos li a{
+    text-decoration: none;
+    font-family: Cambria;
+    size: 12px;
+}
+
+/*contacto*/
+
+.contacto li{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contacto li a{
+    text-decoration: none;
+    font-family: Cambria;
+}
+
+/*versionado*/
+.versionado{
+    width: 100%;
+    background-color: #443731;
+    display: inline-block;
+    text-align: center;
+}
+.versionado span{
+    font-family: Cambria;
+    font-size: 0.6em;
+    margin:0 3%;
 }
 
 /********** REFERENCIAS (Nueva seccion para practicar z-index ***********/
@@ -643,15 +721,18 @@ oculto el menú*/
       display: none;
     }
 
-/*Cuando cambia el tamaño del navegador,
-los z-index de las referencias se invierten*/
-    #ref1 .txt-ref{
-        z-index: 4; /*para que aparezca por encima de la img*/
+/*cambio en las referencias
+    a filas únicas y sin img*/
+    div.tarjeta-ref {
+        flex-flow: row-reverse nowrap;
+        position: relative;
+        text-align: left;
     }
-    #ref2 .txt-ref{
-        z-index: 5; /*para que aparezca por encima de la img*/
+    .tarjeta-ref#ref2, .tarjeta-ref#ref3 {
+        top: 0;
     }
-    #ref3 .txt-ref{
-        z-index: 6; /*para que aparezca por encima de la img*/
+
+    #tarjetas img{
+    display:none;
     }
 }
