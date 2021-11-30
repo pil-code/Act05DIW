@@ -735,4 +735,34 @@ oculto el menú*/
     #tarjetas img{
     display:none;
     }
+
+ /*cambio en el footer a filas únicas*/   
+ footer .container {
+    display: flex;
+    justify-items: center;
+    grid-gap: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+footer .iconos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlacesrapidos ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+ul.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2{
+margin-top: 4%;
 }
