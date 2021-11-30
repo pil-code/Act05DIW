@@ -720,7 +720,10 @@ oculto el menú*/
     .barra, a.boton-ini {
       display: none;
     }
-
+/*amplío el ancho del contenedor*/
+    div.col70 {
+        width: 95%;
+    }
 /*cambio en las referencias
     a filas únicas y sin img*/
     div.tarjeta-ref {
