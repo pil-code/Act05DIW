@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "milove" "miloveregular", "Montserrat";
+    font-family: "milove";
     src: url('fuentes/milove.otf');
     src: url('milove-webfont.woff2') format('woff2'),
          url('milove-webfont.woff') format('woff');
@@ -27,7 +27,7 @@
 }
 
 h1{
-    font-family: milove;
+    font-family: milove, miloveregular, Montserrat;
     color:#ffffff;
     font-size:350%;
     text-align: center;
