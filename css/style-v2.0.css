@@ -678,11 +678,6 @@ input#nombre, input#email{
     margin: 8px 10px;
     box-sizing: border-box;
     
-}
-/*checkbox de privacidad*/
-#cb-privacidad{
-    background-color: rgba(91, 176, 167, 0.4);
-    border: none;
 } 
 
 /*etiqueta de privacidad*/
